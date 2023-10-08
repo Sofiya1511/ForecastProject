@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <title>Weather Forecast</title>
+  </head>
+  <body>
+    <video autoplay muted loop id="video-bg">
+      <source src="/src/pexels_videos_4703 (1080p).mp4" type="video/mp4" />
+    </video>
+    <header>
+      <div class="header-content" id="weather">
+        <h1>Weather Everyday</h1>
+        <div class="search">
+          <input type="text" id="cityInput" placeholder="Enter city" />
+          <button id="searchButton">Search</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="weather weather-container">
+        <h1>Today</h1>
+        <div id="today">
+        </div>
+        <div id="airQuality"></div>
+        <h2>Next 5 days</h2>
+        <div id="forecast"></div>
+      </div>
+
+      <div id="searchHistory" class="search-history-container">
+        <h2>Search history</h2>
+        <ul id="historyList"></ul>
+        <button id="clearHistory">Clear history</button>
+      </div>
+    </main>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
